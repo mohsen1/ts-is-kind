@@ -4,7 +4,7 @@ import * as ts from 'typescript';
  * Return true if node is `EndOfFileToken`
  * @param node A TypeScript node
  */
-export function isEndOfFileToken(node: ts.Node): node is ts.EndOfFileToken {
+export function isEndOfFileToken(node: ts.EndOfFileToken): node is ts.EndOfFileToken {
     return node.kind === ts.SyntaxKind.EndOfFileToken;
 }
 
@@ -12,7 +12,7 @@ export function isEndOfFileToken(node: ts.Node): node is ts.EndOfFileToken {
  * Return true if node is `NumericLiteral`
  * @param node A TypeScript node
  */
-export function isNumericLiteral(node: ts.Node): node is ts.NumericLiteral {
+export function isNumericLiteral(node: ts.NumericLiteral): node is ts.NumericLiteral {
     return node.kind === ts.SyntaxKind.NumericLiteral;
 }
 
@@ -20,7 +20,7 @@ export function isNumericLiteral(node: ts.Node): node is ts.NumericLiteral {
  * Return true if node is `StringLiteral`
  * @param node A TypeScript node
  */
-export function isStringLiteral(node: ts.Node): node is ts.StringLiteral {
+export function isStringLiteral(node: ts.StringLiteral): node is ts.StringLiteral {
     return node.kind === ts.SyntaxKind.StringLiteral;
 }
 
@@ -28,7 +28,7 @@ export function isStringLiteral(node: ts.Node): node is ts.StringLiteral {
  * Return true if node is `JsxText`
  * @param node A TypeScript node
  */
-export function isJsxText(node: ts.Node): node is ts.JsxText {
+export function isJsxText(node: ts.JsxText): node is ts.JsxText {
     return node.kind === ts.SyntaxKind.JsxText;
 }
 
@@ -36,7 +36,7 @@ export function isJsxText(node: ts.Node): node is ts.JsxText {
  * Return true if node is `RegularExpressionLiteral`
  * @param node A TypeScript node
  */
-export function isRegularExpressionLiteral(node: ts.Node): node is ts.RegularExpressionLiteral {
+export function isRegularExpressionLiteral(node: ts.RegularExpressionLiteral): node is ts.RegularExpressionLiteral {
     return node.kind === ts.SyntaxKind.RegularExpressionLiteral;
 }
 
@@ -44,7 +44,7 @@ export function isRegularExpressionLiteral(node: ts.Node): node is ts.RegularExp
  * Return true if node is `NoSubstitutionTemplateLiteral`
  * @param node A TypeScript node
  */
-export function isNoSubstitutionTemplateLiteral(node: ts.Node): node is ts.NoSubstitutionTemplateLiteral {
+export function isNoSubstitutionTemplateLiteral(node: ts.NoSubstitutionTemplateLiteral): node is ts.NoSubstitutionTemplateLiteral {
     return node.kind === ts.SyntaxKind.NoSubstitutionTemplateLiteral;
 }
 
@@ -52,7 +52,7 @@ export function isNoSubstitutionTemplateLiteral(node: ts.Node): node is ts.NoSub
  * Return true if node is `TemplateHead`
  * @param node A TypeScript node
  */
-export function isTemplateHead(node: ts.Node): node is ts.TemplateHead {
+export function isTemplateHead(node: ts.TemplateHead): node is ts.TemplateHead {
     return node.kind === ts.SyntaxKind.TemplateHead;
 }
 
@@ -60,7 +60,7 @@ export function isTemplateHead(node: ts.Node): node is ts.TemplateHead {
  * Return true if node is `TemplateMiddle`
  * @param node A TypeScript node
  */
-export function isTemplateMiddle(node: ts.Node): node is ts.TemplateMiddle {
+export function isTemplateMiddle(node: ts.TemplateMiddle): node is ts.TemplateMiddle {
     return node.kind === ts.SyntaxKind.TemplateMiddle;
 }
 
@@ -68,7 +68,7 @@ export function isTemplateMiddle(node: ts.Node): node is ts.TemplateMiddle {
  * Return true if node is `TemplateTail`
  * @param node A TypeScript node
  */
-export function isTemplateTail(node: ts.Node): node is ts.TemplateTail {
+export function isTemplateTail(node: ts.TemplateTail): node is ts.TemplateTail {
     return node.kind === ts.SyntaxKind.TemplateTail;
 }
 
@@ -76,7 +76,7 @@ export function isTemplateTail(node: ts.Node): node is ts.TemplateTail {
  * Return true if node is `DotDotDotToken`
  * @param node A TypeScript node
  */
-export function isDotDotDotToken(node: ts.Node): node is ts.DotDotDotToken {
+export function isDotDotDotToken(node: ts.DotDotDotToken): node is ts.DotDotDotToken {
     return node.kind === ts.SyntaxKind.DotDotDotToken;
 }
 
@@ -84,7 +84,7 @@ export function isDotDotDotToken(node: ts.Node): node is ts.DotDotDotToken {
  * Return true if node is `EqualsGreaterThanToken`
  * @param node A TypeScript node
  */
-export function isEqualsGreaterThanToken(node: ts.Node): node is ts.EqualsGreaterThanToken {
+export function isEqualsGreaterThanToken(node: ts.EqualsGreaterThanToken): node is ts.EqualsGreaterThanToken {
     return node.kind === ts.SyntaxKind.EqualsGreaterThanToken;
 }
 
@@ -92,7 +92,7 @@ export function isEqualsGreaterThanToken(node: ts.Node): node is ts.EqualsGreate
  * Return true if node is `AsteriskToken`
  * @param node A TypeScript node
  */
-export function isAsteriskToken(node: ts.Node): node is ts.AsteriskToken {
+export function isAsteriskToken(node: ts.AsteriskToken): node is ts.AsteriskToken {
     return node.kind === ts.SyntaxKind.AsteriskToken;
 }
 
@@ -100,7 +100,7 @@ export function isAsteriskToken(node: ts.Node): node is ts.AsteriskToken {
  * Return true if node is `QuestionToken`
  * @param node A TypeScript node
  */
-export function isQuestionToken(node: ts.Node): node is ts.QuestionToken {
+export function isQuestionToken(node: ts.QuestionToken): node is ts.QuestionToken {
     return node.kind === ts.SyntaxKind.QuestionToken;
 }
 
@@ -108,7 +108,7 @@ export function isQuestionToken(node: ts.Node): node is ts.QuestionToken {
  * Return true if node is `ColonToken`
  * @param node A TypeScript node
  */
-export function isColonToken(node: ts.Node): node is ts.ColonToken {
+export function isColonToken(node: ts.ColonToken): node is ts.ColonToken {
     return node.kind === ts.SyntaxKind.ColonToken;
 }
 
@@ -116,7 +116,7 @@ export function isColonToken(node: ts.Node): node is ts.ColonToken {
  * Return true if node is `AtToken`
  * @param node A TypeScript node
  */
-export function isAtToken(node: ts.Node): node is ts.AtToken {
+export function isAtToken(node: ts.AtToken): node is ts.AtToken {
     return node.kind === ts.SyntaxKind.AtToken;
 }
 
@@ -124,7 +124,7 @@ export function isAtToken(node: ts.Node): node is ts.AtToken {
  * Return true if node is `EqualsToken`
  * @param node A TypeScript node
  */
-export function isEqualsToken(node: ts.Node): node is ts.EqualsToken {
+export function isEqualsToken(node: ts.EqualsToken): node is ts.EqualsToken {
     return node.kind === ts.SyntaxKind.EqualsToken;
 }
 
@@ -132,7 +132,7 @@ export function isEqualsToken(node: ts.Node): node is ts.EqualsToken {
  * Return true if node is `Identifier`
  * @param node A TypeScript node
  */
-export function isIdentifier(node: ts.Node): node is ts.Identifier {
+export function isIdentifier(node: ts.Identifier): node is ts.Identifier {
     return node.kind === ts.SyntaxKind.Identifier;
 }
 
@@ -140,7 +140,7 @@ export function isIdentifier(node: ts.Node): node is ts.Identifier {
  * Return true if node is `QualifiedName`
  * @param node A TypeScript node
  */
-export function isQualifiedName(node: ts.Node): node is ts.QualifiedName {
+export function isQualifiedName(node: ts.QualifiedName): node is ts.QualifiedName {
     return node.kind === ts.SyntaxKind.QualifiedName;
 }
 
@@ -148,7 +148,7 @@ export function isQualifiedName(node: ts.Node): node is ts.QualifiedName {
  * Return true if node is `ComputedPropertyName`
  * @param node A TypeScript node
  */
-export function isComputedPropertyName(node: ts.Node): node is ts.ComputedPropertyName {
+export function isComputedPropertyName(node: ts.ComputedPropertyName): node is ts.ComputedPropertyName {
     return node.kind === ts.SyntaxKind.ComputedPropertyName;
 }
 
@@ -156,7 +156,7 @@ export function isComputedPropertyName(node: ts.Node): node is ts.ComputedProper
  * Return true if node is `Decorator`
  * @param node A TypeScript node
  */
-export function isDecorator(node: ts.Node): node is ts.Decorator {
+export function isDecorator(node: ts.Decorator): node is ts.Decorator {
     return node.kind === ts.SyntaxKind.Decorator;
 }
 
@@ -164,7 +164,7 @@ export function isDecorator(node: ts.Node): node is ts.Decorator {
  * Return true if node is `PropertySignature`
  * @param node A TypeScript node
  */
-export function isPropertySignature(node: ts.Node): node is ts.PropertySignature {
+export function isPropertySignature(node: ts.PropertySignature): node is ts.PropertySignature {
     return node.kind === ts.SyntaxKind.PropertySignature;
 }
 
@@ -172,7 +172,7 @@ export function isPropertySignature(node: ts.Node): node is ts.PropertySignature
  * Return true if node is `PropertyDeclaration`
  * @param node A TypeScript node
  */
-export function isPropertyDeclaration(node: ts.Node): node is ts.PropertyDeclaration {
+export function isPropertyDeclaration(node: ts.PropertyDeclaration): node is ts.PropertyDeclaration {
     return node.kind === ts.SyntaxKind.PropertyDeclaration;
 }
 
@@ -180,7 +180,7 @@ export function isPropertyDeclaration(node: ts.Node): node is ts.PropertyDeclara
  * Return true if node is `MethodSignature`
  * @param node A TypeScript node
  */
-export function isMethodSignature(node: ts.Node): node is ts.MethodSignature {
+export function isMethodSignature(node: ts.MethodSignature): node is ts.MethodSignature {
     return node.kind === ts.SyntaxKind.MethodSignature;
 }
 
@@ -188,7 +188,7 @@ export function isMethodSignature(node: ts.Node): node is ts.MethodSignature {
  * Return true if node is `MethodDeclaration`
  * @param node A TypeScript node
  */
-export function isMethodDeclaration(node: ts.Node): node is ts.MethodDeclaration {
+export function isMethodDeclaration(node: ts.MethodDeclaration): node is ts.MethodDeclaration {
     return node.kind === ts.SyntaxKind.MethodDeclaration;
 }
 
@@ -196,7 +196,7 @@ export function isMethodDeclaration(node: ts.Node): node is ts.MethodDeclaration
  * Return true if node is `ObjectBindingPattern`
  * @param node A TypeScript node
  */
-export function isObjectBindingPattern(node: ts.Node): node is ts.ObjectBindingPattern {
+export function isObjectBindingPattern(node: ts.ObjectBindingPattern): node is ts.ObjectBindingPattern {
     return node.kind === ts.SyntaxKind.ObjectBindingPattern;
 }
 
@@ -204,7 +204,7 @@ export function isObjectBindingPattern(node: ts.Node): node is ts.ObjectBindingP
  * Return true if node is `ArrayBindingPattern`
  * @param node A TypeScript node
  */
-export function isArrayBindingPattern(node: ts.Node): node is ts.ArrayBindingPattern {
+export function isArrayBindingPattern(node: ts.ArrayBindingPattern): node is ts.ArrayBindingPattern {
     return node.kind === ts.SyntaxKind.ArrayBindingPattern;
 }
 
@@ -212,7 +212,7 @@ export function isArrayBindingPattern(node: ts.Node): node is ts.ArrayBindingPat
  * Return true if node is `BindingElement`
  * @param node A TypeScript node
  */
-export function isBindingElement(node: ts.Node): node is ts.BindingElement {
+export function isBindingElement(node: ts.BindingElement): node is ts.BindingElement {
     return node.kind === ts.SyntaxKind.BindingElement;
 }
 
@@ -220,7 +220,7 @@ export function isBindingElement(node: ts.Node): node is ts.BindingElement {
  * Return true if node is `ArrayLiteralExpression`
  * @param node A TypeScript node
  */
-export function isArrayLiteralExpression(node: ts.Node): node is ts.ArrayLiteralExpression {
+export function isArrayLiteralExpression(node: ts.ArrayLiteralExpression): node is ts.ArrayLiteralExpression {
     return node.kind === ts.SyntaxKind.ArrayLiteralExpression;
 }
 
@@ -228,7 +228,7 @@ export function isArrayLiteralExpression(node: ts.Node): node is ts.ArrayLiteral
  * Return true if node is `ObjectLiteralExpression`
  * @param node A TypeScript node
  */
-export function isObjectLiteralExpression(node: ts.Node): node is ts.ObjectLiteralExpression {
+export function isObjectLiteralExpression(node: ts.ObjectLiteralExpression): node is ts.ObjectLiteralExpression {
     return node.kind === ts.SyntaxKind.ObjectLiteralExpression;
 }
 
@@ -236,7 +236,7 @@ export function isObjectLiteralExpression(node: ts.Node): node is ts.ObjectLiter
  * Return true if node is `PropertyAccessExpression`
  * @param node A TypeScript node
  */
-export function isPropertyAccessExpression(node: ts.Node): node is ts.PropertyAccessExpression {
+export function isPropertyAccessExpression(node: ts.PropertyAccessExpression): node is ts.PropertyAccessExpression {
     return node.kind === ts.SyntaxKind.PropertyAccessExpression;
 }
 
@@ -244,7 +244,7 @@ export function isPropertyAccessExpression(node: ts.Node): node is ts.PropertyAc
  * Return true if node is `ElementAccessExpression`
  * @param node A TypeScript node
  */
-export function isElementAccessExpression(node: ts.Node): node is ts.ElementAccessExpression {
+export function isElementAccessExpression(node: ts.ElementAccessExpression): node is ts.ElementAccessExpression {
     return node.kind === ts.SyntaxKind.ElementAccessExpression;
 }
 
@@ -252,7 +252,7 @@ export function isElementAccessExpression(node: ts.Node): node is ts.ElementAcce
  * Return true if node is `CallExpression`
  * @param node A TypeScript node
  */
-export function isCallExpression(node: ts.Node): node is ts.CallExpression {
+export function isCallExpression(node: ts.CallExpression): node is ts.CallExpression {
     return node.kind === ts.SyntaxKind.CallExpression;
 }
 
@@ -260,7 +260,7 @@ export function isCallExpression(node: ts.Node): node is ts.CallExpression {
  * Return true if node is `NewExpression`
  * @param node A TypeScript node
  */
-export function isNewExpression(node: ts.Node): node is ts.NewExpression {
+export function isNewExpression(node: ts.NewExpression): node is ts.NewExpression {
     return node.kind === ts.SyntaxKind.NewExpression;
 }
 
@@ -268,15 +268,16 @@ export function isNewExpression(node: ts.Node): node is ts.NewExpression {
  * Return true if node is `TaggedTemplateExpression`
  * @param node A TypeScript node
  */
-export function isTaggedTemplateExpression(node: ts.Node): node is ts.TaggedTemplateExpression {
+export function isTaggedTemplateExpression(node: ts.TaggedTemplateExpression): node is ts.TaggedTemplateExpression {
     return node.kind === ts.SyntaxKind.TaggedTemplateExpression;
 }
+
 
 /**
  * Return true if node is `ParenthesizedExpression`
  * @param node A TypeScript node
  */
-export function isParenthesizedExpression(node: ts.Node): node is ts.ParenthesizedExpression {
+export function isParenthesizedExpression(node: ts.ParenthesizedExpression): node is ts.ParenthesizedExpression {
     return node.kind === ts.SyntaxKind.ParenthesizedExpression;
 }
 
@@ -284,7 +285,7 @@ export function isParenthesizedExpression(node: ts.Node): node is ts.Parenthesiz
  * Return true if node is `FunctionExpression`
  * @param node A TypeScript node
  */
-export function isFunctionExpression(node: ts.Node): node is ts.FunctionExpression {
+export function isFunctionExpression(node: ts.FunctionExpression): node is ts.FunctionExpression {
     return node.kind === ts.SyntaxKind.FunctionExpression;
 }
 
@@ -292,7 +293,7 @@ export function isFunctionExpression(node: ts.Node): node is ts.FunctionExpressi
  * Return true if node is `ArrowFunction`
  * @param node A TypeScript node
  */
-export function isArrowFunction(node: ts.Node): node is ts.ArrowFunction {
+export function isArrowFunction(node: ts.ArrowFunction): node is ts.ArrowFunction {
     return node.kind === ts.SyntaxKind.ArrowFunction;
 }
 
@@ -300,7 +301,7 @@ export function isArrowFunction(node: ts.Node): node is ts.ArrowFunction {
  * Return true if node is `DeleteExpression`
  * @param node A TypeScript node
  */
-export function isDeleteExpression(node: ts.Node): node is ts.DeleteExpression {
+export function isDeleteExpression(node: ts.DeleteExpression): node is ts.DeleteExpression {
     return node.kind === ts.SyntaxKind.DeleteExpression;
 }
 
@@ -308,7 +309,7 @@ export function isDeleteExpression(node: ts.Node): node is ts.DeleteExpression {
  * Return true if node is `TypeOfExpression`
  * @param node A TypeScript node
  */
-export function isTypeOfExpression(node: ts.Node): node is ts.TypeOfExpression {
+export function isTypeOfExpression(node: ts.TypeOfExpression): node is ts.TypeOfExpression {
     return node.kind === ts.SyntaxKind.TypeOfExpression;
 }
 
@@ -316,7 +317,7 @@ export function isTypeOfExpression(node: ts.Node): node is ts.TypeOfExpression {
  * Return true if node is `VoidExpression`
  * @param node A TypeScript node
  */
-export function isVoidExpression(node: ts.Node): node is ts.VoidExpression {
+export function isVoidExpression(node: ts.VoidExpression): node is ts.VoidExpression {
     return node.kind === ts.SyntaxKind.VoidExpression;
 }
 
@@ -324,7 +325,7 @@ export function isVoidExpression(node: ts.Node): node is ts.VoidExpression {
  * Return true if node is `AwaitExpression`
  * @param node A TypeScript node
  */
-export function isAwaitExpression(node: ts.Node): node is ts.AwaitExpression {
+export function isAwaitExpression(node: ts.AwaitExpression): node is ts.AwaitExpression {
     return node.kind === ts.SyntaxKind.AwaitExpression;
 }
 
@@ -332,7 +333,7 @@ export function isAwaitExpression(node: ts.Node): node is ts.AwaitExpression {
  * Return true if node is `PrefixUnaryExpression`
  * @param node A TypeScript node
  */
-export function isPrefixUnaryExpression(node: ts.Node): node is ts.PrefixUnaryExpression {
+export function isPrefixUnaryExpression(node: ts.PrefixUnaryExpression): node is ts.PrefixUnaryExpression {
     return node.kind === ts.SyntaxKind.PrefixUnaryExpression;
 }
 
@@ -340,7 +341,7 @@ export function isPrefixUnaryExpression(node: ts.Node): node is ts.PrefixUnaryEx
  * Return true if node is `PostfixUnaryExpression`
  * @param node A TypeScript node
  */
-export function isPostfixUnaryExpression(node: ts.Node): node is ts.PostfixUnaryExpression {
+export function isPostfixUnaryExpression(node: ts.PostfixUnaryExpression): node is ts.PostfixUnaryExpression {
     return node.kind === ts.SyntaxKind.PostfixUnaryExpression;
 }
 
@@ -348,7 +349,7 @@ export function isPostfixUnaryExpression(node: ts.Node): node is ts.PostfixUnary
  * Return true if node is `BinaryExpression`
  * @param node A TypeScript node
  */
-export function isBinaryExpression(node: ts.Node): node is ts.BinaryExpression {
+export function isBinaryExpression(node: ts.BinaryExpression): node is ts.BinaryExpression {
     return node.kind === ts.SyntaxKind.BinaryExpression;
 }
 
@@ -356,7 +357,7 @@ export function isBinaryExpression(node: ts.Node): node is ts.BinaryExpression {
  * Return true if node is `ConditionalExpression`
  * @param node A TypeScript node
  */
-export function isConditionalExpression(node: ts.Node): node is ts.ConditionalExpression {
+export function isConditionalExpression(node: ts.ConditionalExpression): node is ts.ConditionalExpression {
     return node.kind === ts.SyntaxKind.ConditionalExpression;
 }
 
@@ -364,7 +365,7 @@ export function isConditionalExpression(node: ts.Node): node is ts.ConditionalEx
  * Return true if node is `TemplateExpression`
  * @param node A TypeScript node
  */
-export function isTemplateExpression(node: ts.Node): node is ts.TemplateExpression {
+export function isTemplateExpression(node: ts.TemplateExpression): node is ts.TemplateExpression {
     return node.kind === ts.SyntaxKind.TemplateExpression;
 }
 
@@ -372,7 +373,7 @@ export function isTemplateExpression(node: ts.Node): node is ts.TemplateExpressi
  * Return true if node is `YieldExpression`
  * @param node A TypeScript node
  */
-export function isYieldExpression(node: ts.Node): node is ts.YieldExpression {
+export function isYieldExpression(node: ts.YieldExpression): node is ts.YieldExpression {
     return node.kind === ts.SyntaxKind.YieldExpression;
 }
 
@@ -380,7 +381,7 @@ export function isYieldExpression(node: ts.Node): node is ts.YieldExpression {
  * Return true if node is `SpreadElement`
  * @param node A TypeScript node
  */
-export function isSpreadElement(node: ts.Node): node is ts.SpreadElement {
+export function isSpreadElement(node: ts.SpreadElement): node is ts.SpreadElement {
     return node.kind === ts.SyntaxKind.SpreadElement;
 }
 
@@ -388,7 +389,7 @@ export function isSpreadElement(node: ts.Node): node is ts.SpreadElement {
  * Return true if node is `ClassExpression`
  * @param node A TypeScript node
  */
-export function isClassExpression(node: ts.Node): node is ts.ClassExpression {
+export function isClassExpression(node: ts.ClassExpression): node is ts.ClassExpression {
     return node.kind === ts.SyntaxKind.ClassExpression;
 }
 
@@ -396,7 +397,7 @@ export function isClassExpression(node: ts.Node): node is ts.ClassExpression {
  * Return true if node is `OmittedExpression`
  * @param node A TypeScript node
  */
-export function isOmittedExpression(node: ts.Node): node is ts.OmittedExpression {
+export function isOmittedExpression(node: ts.OmittedExpression): node is ts.OmittedExpression {
     return node.kind === ts.SyntaxKind.OmittedExpression;
 }
 
@@ -404,7 +405,7 @@ export function isOmittedExpression(node: ts.Node): node is ts.OmittedExpression
  * Return true if node is `ExpressionWithTypeArguments`
  * @param node A TypeScript node
  */
-export function isExpressionWithTypeArguments(node: ts.Node): node is ts.ExpressionWithTypeArguments {
+export function isExpressionWithTypeArguments(node: ts.ExpressionWithTypeArguments): node is ts.ExpressionWithTypeArguments {
     return node.kind === ts.SyntaxKind.ExpressionWithTypeArguments;
 }
 
@@ -412,7 +413,7 @@ export function isExpressionWithTypeArguments(node: ts.Node): node is ts.Express
  * Return true if node is `AsExpression`
  * @param node A TypeScript node
  */
-export function isAsExpression(node: ts.Node): node is ts.AsExpression {
+export function isAsExpression(node: ts.AsExpression): node is ts.AsExpression {
     return node.kind === ts.SyntaxKind.AsExpression;
 }
 
@@ -420,7 +421,7 @@ export function isAsExpression(node: ts.Node): node is ts.AsExpression {
  * Return true if node is `NonNullExpression`
  * @param node A TypeScript node
  */
-export function isNonNullExpression(node: ts.Node): node is ts.NonNullExpression {
+export function isNonNullExpression(node: ts.NonNullExpression): node is ts.NonNullExpression {
     return node.kind === ts.SyntaxKind.NonNullExpression;
 }
 
@@ -428,7 +429,7 @@ export function isNonNullExpression(node: ts.Node): node is ts.NonNullExpression
  * Return true if node is `MetaProperty`
  * @param node A TypeScript node
  */
-export function isMetaProperty(node: ts.Node): node is ts.MetaProperty {
+export function isMetaProperty(node: ts.MetaProperty): node is ts.MetaProperty {
     return node.kind === ts.SyntaxKind.MetaProperty;
 }
 
@@ -436,7 +437,7 @@ export function isMetaProperty(node: ts.Node): node is ts.MetaProperty {
  * Return true if node is `TemplateSpan`
  * @param node A TypeScript node
  */
-export function isTemplateSpan(node: ts.Node): node is ts.TemplateSpan {
+export function isTemplateSpan(node: ts.TemplateSpan): node is ts.TemplateSpan {
     return node.kind === ts.SyntaxKind.TemplateSpan;
 }
 
@@ -444,7 +445,7 @@ export function isTemplateSpan(node: ts.Node): node is ts.TemplateSpan {
  * Return true if node is `SemicolonClassElement`
  * @param node A TypeScript node
  */
-export function isSemicolonClassElement(node: ts.Node): node is ts.SemicolonClassElement {
+export function isSemicolonClassElement(node: ts.SemicolonClassElement): node is ts.SemicolonClassElement {
     return node.kind === ts.SyntaxKind.SemicolonClassElement;
 }
 
@@ -452,7 +453,7 @@ export function isSemicolonClassElement(node: ts.Node): node is ts.SemicolonClas
  * Return true if node is `Block`
  * @param node A TypeScript node
  */
-export function isBlock(node: ts.Node): node is ts.Block {
+export function isBlock(node: ts.Block): node is ts.Block {
     return node.kind === ts.SyntaxKind.Block;
 }
 
@@ -460,7 +461,7 @@ export function isBlock(node: ts.Node): node is ts.Block {
  * Return true if node is `VariableStatement`
  * @param node A TypeScript node
  */
-export function isVariableStatement(node: ts.Node): node is ts.VariableStatement {
+export function isVariableStatement(node: ts.VariableStatement): node is ts.VariableStatement {
     return node.kind === ts.SyntaxKind.VariableStatement;
 }
 
@@ -468,7 +469,7 @@ export function isVariableStatement(node: ts.Node): node is ts.VariableStatement
  * Return true if node is `EmptyStatement`
  * @param node A TypeScript node
  */
-export function isEmptyStatement(node: ts.Node): node is ts.EmptyStatement {
+export function isEmptyStatement(node: ts.EmptyStatement): node is ts.EmptyStatement {
     return node.kind === ts.SyntaxKind.EmptyStatement;
 }
 
@@ -476,7 +477,7 @@ export function isEmptyStatement(node: ts.Node): node is ts.EmptyStatement {
  * Return true if node is `ExpressionStatement`
  * @param node A TypeScript node
  */
-export function isExpressionStatement(node: ts.Node): node is ts.ExpressionStatement {
+export function isExpressionStatement(node: ts.ExpressionStatement): node is ts.ExpressionStatement {
     return node.kind === ts.SyntaxKind.ExpressionStatement;
 }
 
@@ -484,7 +485,7 @@ export function isExpressionStatement(node: ts.Node): node is ts.ExpressionState
  * Return true if node is `IfStatement`
  * @param node A TypeScript node
  */
-export function isIfStatement(node: ts.Node): node is ts.IfStatement {
+export function isIfStatement(node: ts.IfStatement): node is ts.IfStatement {
     return node.kind === ts.SyntaxKind.IfStatement;
 }
 
@@ -492,7 +493,7 @@ export function isIfStatement(node: ts.Node): node is ts.IfStatement {
  * Return true if node is `DoStatement`
  * @param node A TypeScript node
  */
-export function isDoStatement(node: ts.Node): node is ts.DoStatement {
+export function isDoStatement(node: ts.DoStatement): node is ts.DoStatement {
     return node.kind === ts.SyntaxKind.DoStatement;
 }
 
@@ -500,7 +501,7 @@ export function isDoStatement(node: ts.Node): node is ts.DoStatement {
  * Return true if node is `WhileStatement`
  * @param node A TypeScript node
  */
-export function isWhileStatement(node: ts.Node): node is ts.WhileStatement {
+export function isWhileStatement(node: ts.WhileStatement): node is ts.WhileStatement {
     return node.kind === ts.SyntaxKind.WhileStatement;
 }
 
@@ -508,7 +509,7 @@ export function isWhileStatement(node: ts.Node): node is ts.WhileStatement {
  * Return true if node is `ForStatement`
  * @param node A TypeScript node
  */
-export function isForStatement(node: ts.Node): node is ts.ForStatement {
+export function isForStatement(node: ts.ForStatement): node is ts.ForStatement {
     return node.kind === ts.SyntaxKind.ForStatement;
 }
 
@@ -516,7 +517,7 @@ export function isForStatement(node: ts.Node): node is ts.ForStatement {
  * Return true if node is `ForInStatement`
  * @param node A TypeScript node
  */
-export function isForInStatement(node: ts.Node): node is ts.ForInStatement {
+export function isForInStatement(node: ts.ForInStatement): node is ts.ForInStatement {
     return node.kind === ts.SyntaxKind.ForInStatement;
 }
 
@@ -524,7 +525,7 @@ export function isForInStatement(node: ts.Node): node is ts.ForInStatement {
  * Return true if node is `ForOfStatement`
  * @param node A TypeScript node
  */
-export function isForOfStatement(node: ts.Node): node is ts.ForOfStatement {
+export function isForOfStatement(node: ts.ForOfStatement): node is ts.ForOfStatement {
     return node.kind === ts.SyntaxKind.ForOfStatement;
 }
 
@@ -532,7 +533,7 @@ export function isForOfStatement(node: ts.Node): node is ts.ForOfStatement {
  * Return true if node is `ContinueStatement`
  * @param node A TypeScript node
  */
-export function isContinueStatement(node: ts.Node): node is ts.ContinueStatement {
+export function isContinueStatement(node: ts.ContinueStatement): node is ts.ContinueStatement {
     return node.kind === ts.SyntaxKind.ContinueStatement;
 }
 
@@ -540,7 +541,7 @@ export function isContinueStatement(node: ts.Node): node is ts.ContinueStatement
  * Return true if node is `BreakStatement`
  * @param node A TypeScript node
  */
-export function isBreakStatement(node: ts.Node): node is ts.BreakStatement {
+export function isBreakStatement(node: ts.BreakStatement): node is ts.BreakStatement {
     return node.kind === ts.SyntaxKind.BreakStatement;
 }
 
@@ -548,7 +549,7 @@ export function isBreakStatement(node: ts.Node): node is ts.BreakStatement {
  * Return true if node is `ReturnStatement`
  * @param node A TypeScript node
  */
-export function isReturnStatement(node: ts.Node): node is ts.ReturnStatement {
+export function isReturnStatement(node: ts.ReturnStatement): node is ts.ReturnStatement {
     return node.kind === ts.SyntaxKind.ReturnStatement;
 }
 
@@ -556,7 +557,7 @@ export function isReturnStatement(node: ts.Node): node is ts.ReturnStatement {
  * Return true if node is `WithStatement`
  * @param node A TypeScript node
  */
-export function isWithStatement(node: ts.Node): node is ts.WithStatement {
+export function isWithStatement(node: ts.WithStatement): node is ts.WithStatement {
     return node.kind === ts.SyntaxKind.WithStatement;
 }
 
@@ -564,7 +565,7 @@ export function isWithStatement(node: ts.Node): node is ts.WithStatement {
  * Return true if node is `SwitchStatement`
  * @param node A TypeScript node
  */
-export function isSwitchStatement(node: ts.Node): node is ts.SwitchStatement {
+export function isSwitchStatement(node: ts.SwitchStatement): node is ts.SwitchStatement {
     return node.kind === ts.SyntaxKind.SwitchStatement;
 }
 
@@ -572,7 +573,7 @@ export function isSwitchStatement(node: ts.Node): node is ts.SwitchStatement {
  * Return true if node is `LabeledStatement`
  * @param node A TypeScript node
  */
-export function isLabeledStatement(node: ts.Node): node is ts.LabeledStatement {
+export function isLabeledStatement(node: ts.LabeledStatement): node is ts.LabeledStatement {
     return node.kind === ts.SyntaxKind.LabeledStatement;
 }
 
@@ -580,7 +581,7 @@ export function isLabeledStatement(node: ts.Node): node is ts.LabeledStatement {
  * Return true if node is `ThrowStatement`
  * @param node A TypeScript node
  */
-export function isThrowStatement(node: ts.Node): node is ts.ThrowStatement {
+export function isThrowStatement(node: ts.ThrowStatement): node is ts.ThrowStatement {
     return node.kind === ts.SyntaxKind.ThrowStatement;
 }
 
@@ -588,7 +589,7 @@ export function isThrowStatement(node: ts.Node): node is ts.ThrowStatement {
  * Return true if node is `TryStatement`
  * @param node A TypeScript node
  */
-export function isTryStatement(node: ts.Node): node is ts.TryStatement {
+export function isTryStatement(node: ts.TryStatement): node is ts.TryStatement {
     return node.kind === ts.SyntaxKind.TryStatement;
 }
 
@@ -596,7 +597,7 @@ export function isTryStatement(node: ts.Node): node is ts.TryStatement {
  * Return true if node is `DebuggerStatement`
  * @param node A TypeScript node
  */
-export function isDebuggerStatement(node: ts.Node): node is ts.DebuggerStatement {
+export function isDebuggerStatement(node: ts.DebuggerStatement): node is ts.DebuggerStatement {
     return node.kind === ts.SyntaxKind.DebuggerStatement;
 }
 
@@ -604,7 +605,7 @@ export function isDebuggerStatement(node: ts.Node): node is ts.DebuggerStatement
  * Return true if node is `VariableDeclaration`
  * @param node A TypeScript node
  */
-export function isVariableDeclaration(node: ts.Node): node is ts.VariableDeclaration {
+export function isVariableDeclaration(node: ts.VariableDeclaration): node is ts.VariableDeclaration {
     return node.kind === ts.SyntaxKind.VariableDeclaration;
 }
 
@@ -612,7 +613,7 @@ export function isVariableDeclaration(node: ts.Node): node is ts.VariableDeclara
  * Return true if node is `VariableDeclarationList`
  * @param node A TypeScript node
  */
-export function isVariableDeclarationList(node: ts.Node): node is ts.VariableDeclarationList {
+export function isVariableDeclarationList(node: ts.VariableDeclarationList): node is ts.VariableDeclarationList {
     return node.kind === ts.SyntaxKind.VariableDeclarationList;
 }
 
@@ -620,7 +621,7 @@ export function isVariableDeclarationList(node: ts.Node): node is ts.VariableDec
  * Return true if node is `FunctionDeclaration`
  * @param node A TypeScript node
  */
-export function isFunctionDeclaration(node: ts.Node): node is ts.FunctionDeclaration {
+export function isFunctionDeclaration(node: ts.FunctionDeclaration): node is ts.FunctionDeclaration {
     return node.kind === ts.SyntaxKind.FunctionDeclaration;
 }
 
@@ -628,7 +629,7 @@ export function isFunctionDeclaration(node: ts.Node): node is ts.FunctionDeclara
  * Return true if node is `ClassDeclaration`
  * @param node A TypeScript node
  */
-export function isClassDeclaration(node: ts.Node): node is ts.ClassDeclaration {
+export function isClassDeclaration(node: ts.ClassDeclaration): node is ts.ClassDeclaration {
     return node.kind === ts.SyntaxKind.ClassDeclaration;
 }
 
@@ -636,7 +637,7 @@ export function isClassDeclaration(node: ts.Node): node is ts.ClassDeclaration {
  * Return true if node is `InterfaceDeclaration`
  * @param node A TypeScript node
  */
-export function isInterfaceDeclaration(node: ts.Node): node is ts.InterfaceDeclaration {
+export function isInterfaceDeclaration(node: ts.InterfaceDeclaration): node is ts.InterfaceDeclaration {
     return node.kind === ts.SyntaxKind.InterfaceDeclaration;
 }
 
@@ -644,7 +645,7 @@ export function isInterfaceDeclaration(node: ts.Node): node is ts.InterfaceDecla
  * Return true if node is `TypeAliasDeclaration`
  * @param node A TypeScript node
  */
-export function isTypeAliasDeclaration(node: ts.Node): node is ts.TypeAliasDeclaration {
+export function isTypeAliasDeclaration(node: ts.TypeAliasDeclaration): node is ts.TypeAliasDeclaration {
     return node.kind === ts.SyntaxKind.TypeAliasDeclaration;
 }
 
@@ -652,7 +653,7 @@ export function isTypeAliasDeclaration(node: ts.Node): node is ts.TypeAliasDecla
  * Return true if node is `EnumDeclaration`
  * @param node A TypeScript node
  */
-export function isEnumDeclaration(node: ts.Node): node is ts.EnumDeclaration {
+export function isEnumDeclaration(node: ts.EnumDeclaration): node is ts.EnumDeclaration {
     return node.kind === ts.SyntaxKind.EnumDeclaration;
 }
 
@@ -660,7 +661,7 @@ export function isEnumDeclaration(node: ts.Node): node is ts.EnumDeclaration {
  * Return true if node is `ModuleDeclaration`
  * @param node A TypeScript node
  */
-export function isModuleDeclaration(node: ts.Node): node is ts.ModuleDeclaration {
+export function isModuleDeclaration(node: ts.ModuleDeclaration): node is ts.ModuleDeclaration {
     return node.kind === ts.SyntaxKind.ModuleDeclaration;
 }
 
@@ -668,7 +669,7 @@ export function isModuleDeclaration(node: ts.Node): node is ts.ModuleDeclaration
  * Return true if node is `ModuleBlock`
  * @param node A TypeScript node
  */
-export function isModuleBlock(node: ts.Node): node is ts.ModuleBlock {
+export function isModuleBlock(node: ts.ModuleBlock): node is ts.ModuleBlock {
     return node.kind === ts.SyntaxKind.ModuleBlock;
 }
 
@@ -676,7 +677,7 @@ export function isModuleBlock(node: ts.Node): node is ts.ModuleBlock {
  * Return true if node is `CaseBlock`
  * @param node A TypeScript node
  */
-export function isCaseBlock(node: ts.Node): node is ts.CaseBlock {
+export function isCaseBlock(node: ts.CaseBlock): node is ts.CaseBlock {
     return node.kind === ts.SyntaxKind.CaseBlock;
 }
 
@@ -684,7 +685,7 @@ export function isCaseBlock(node: ts.Node): node is ts.CaseBlock {
  * Return true if node is `NamespaceExportDeclaration`
  * @param node A TypeScript node
  */
-export function isNamespaceExportDeclaration(node: ts.Node): node is ts.NamespaceExportDeclaration {
+export function isNamespaceExportDeclaration(node: ts.NamespaceExportDeclaration): node is ts.NamespaceExportDeclaration {
     return node.kind === ts.SyntaxKind.NamespaceExportDeclaration;
 }
 
@@ -692,7 +693,7 @@ export function isNamespaceExportDeclaration(node: ts.Node): node is ts.Namespac
  * Return true if node is `ImportEqualsDeclaration`
  * @param node A TypeScript node
  */
-export function isImportEqualsDeclaration(node: ts.Node): node is ts.ImportEqualsDeclaration {
+export function isImportEqualsDeclaration(node: ts.ImportEqualsDeclaration): node is ts.ImportEqualsDeclaration {
     return node.kind === ts.SyntaxKind.ImportEqualsDeclaration;
 }
 
@@ -700,7 +701,7 @@ export function isImportEqualsDeclaration(node: ts.Node): node is ts.ImportEqual
  * Return true if node is `ImportDeclaration`
  * @param node A TypeScript node
  */
-export function isImportDeclaration(node: ts.Node): node is ts.ImportDeclaration {
+export function isImportDeclaration(node: ts.ImportDeclaration): node is ts.ImportDeclaration {
     return node.kind === ts.SyntaxKind.ImportDeclaration;
 }
 
@@ -708,7 +709,7 @@ export function isImportDeclaration(node: ts.Node): node is ts.ImportDeclaration
  * Return true if node is `ImportClause`
  * @param node A TypeScript node
  */
-export function isImportClause(node: ts.Node): node is ts.ImportClause {
+export function isImportClause(node: ts.ImportClause): node is ts.ImportClause {
     return node.kind === ts.SyntaxKind.ImportClause;
 }
 
@@ -716,7 +717,7 @@ export function isImportClause(node: ts.Node): node is ts.ImportClause {
  * Return true if node is `NamespaceImport`
  * @param node A TypeScript node
  */
-export function isNamespaceImport(node: ts.Node): node is ts.NamespaceImport {
+export function isNamespaceImport(node: ts.NamespaceImport): node is ts.NamespaceImport {
     return node.kind === ts.SyntaxKind.NamespaceImport;
 }
 
@@ -724,7 +725,7 @@ export function isNamespaceImport(node: ts.Node): node is ts.NamespaceImport {
  * Return true if node is `NamedImports`
  * @param node A TypeScript node
  */
-export function isNamedImports(node: ts.Node): node is ts.NamedImports {
+export function isNamedImports(node: ts.NamedImports): node is ts.NamedImports {
     return node.kind === ts.SyntaxKind.NamedImports;
 }
 
@@ -732,7 +733,7 @@ export function isNamedImports(node: ts.Node): node is ts.NamedImports {
  * Return true if node is `ImportSpecifier`
  * @param node A TypeScript node
  */
-export function isImportSpecifier(node: ts.Node): node is ts.ImportSpecifier {
+export function isImportSpecifier(node: ts.ImportSpecifier): node is ts.ImportSpecifier {
     return node.kind === ts.SyntaxKind.ImportSpecifier;
 }
 
@@ -740,7 +741,7 @@ export function isImportSpecifier(node: ts.Node): node is ts.ImportSpecifier {
  * Return true if node is `ExportAssignment`
  * @param node A TypeScript node
  */
-export function isExportAssignment(node: ts.Node): node is ts.ExportAssignment {
+export function isExportAssignment(node: ts.ExportAssignment): node is ts.ExportAssignment {
     return node.kind === ts.SyntaxKind.ExportAssignment;
 }
 
@@ -748,7 +749,7 @@ export function isExportAssignment(node: ts.Node): node is ts.ExportAssignment {
  * Return true if node is `ExportDeclaration`
  * @param node A TypeScript node
  */
-export function isExportDeclaration(node: ts.Node): node is ts.ExportDeclaration {
+export function isExportDeclaration(node: ts.ExportDeclaration): node is ts.ExportDeclaration {
     return node.kind === ts.SyntaxKind.ExportDeclaration;
 }
 
@@ -756,7 +757,7 @@ export function isExportDeclaration(node: ts.Node): node is ts.ExportDeclaration
  * Return true if node is `NamedExports`
  * @param node A TypeScript node
  */
-export function isNamedExports(node: ts.Node): node is ts.NamedExports {
+export function isNamedExports(node: ts.NamedExports): node is ts.NamedExports {
     return node.kind === ts.SyntaxKind.NamedExports;
 }
 
@@ -764,7 +765,7 @@ export function isNamedExports(node: ts.Node): node is ts.NamedExports {
  * Return true if node is `ExportSpecifier`
  * @param node A TypeScript node
  */
-export function isExportSpecifier(node: ts.Node): node is ts.ExportSpecifier {
+export function isExportSpecifier(node: ts.ExportSpecifier): node is ts.ExportSpecifier {
     return node.kind === ts.SyntaxKind.ExportSpecifier;
 }
 
@@ -772,7 +773,7 @@ export function isExportSpecifier(node: ts.Node): node is ts.ExportSpecifier {
  * Return true if node is `MissingDeclaration`
  * @param node A TypeScript node
  */
-export function isMissingDeclaration(node: ts.Node): node is ts.MissingDeclaration {
+export function isMissingDeclaration(node: ts.MissingDeclaration): node is ts.MissingDeclaration {
     return node.kind === ts.SyntaxKind.MissingDeclaration;
 }
 
@@ -780,7 +781,7 @@ export function isMissingDeclaration(node: ts.Node): node is ts.MissingDeclarati
  * Return true if node is `ExternalModuleReference`
  * @param node A TypeScript node
  */
-export function isExternalModuleReference(node: ts.Node): node is ts.ExternalModuleReference {
+export function isExternalModuleReference(node: ts.ExternalModuleReference): node is ts.ExternalModuleReference {
     return node.kind === ts.SyntaxKind.ExternalModuleReference;
 }
 
@@ -788,7 +789,7 @@ export function isExternalModuleReference(node: ts.Node): node is ts.ExternalMod
  * Return true if node is `JsxElement`
  * @param node A TypeScript node
  */
-export function isJsxElement(node: ts.Node): node is ts.JsxElement {
+export function isJsxElement(node: ts.JsxElement): node is ts.JsxElement {
     return node.kind === ts.SyntaxKind.JsxElement;
 }
 
@@ -796,7 +797,7 @@ export function isJsxElement(node: ts.Node): node is ts.JsxElement {
  * Return true if node is `JsxSelfClosingElement`
  * @param node A TypeScript node
  */
-export function isJsxSelfClosingElement(node: ts.Node): node is ts.JsxSelfClosingElement {
+export function isJsxSelfClosingElement(node: ts.JsxSelfClosingElement): node is ts.JsxSelfClosingElement {
     return node.kind === ts.SyntaxKind.JsxSelfClosingElement;
 }
 
@@ -804,7 +805,7 @@ export function isJsxSelfClosingElement(node: ts.Node): node is ts.JsxSelfClosin
  * Return true if node is `JsxOpeningElement`
  * @param node A TypeScript node
  */
-export function isJsxOpeningElement(node: ts.Node): node is ts.JsxOpeningElement {
+export function isJsxOpeningElement(node: ts.JsxOpeningElement): node is ts.JsxOpeningElement {
     return node.kind === ts.SyntaxKind.JsxOpeningElement;
 }
 
@@ -812,15 +813,39 @@ export function isJsxOpeningElement(node: ts.Node): node is ts.JsxOpeningElement
  * Return true if node is `JsxClosingElement`
  * @param node A TypeScript node
  */
-export function isJsxClosingElement(node: ts.Node): node is ts.JsxClosingElement {
+export function isJsxClosingElement(node: ts.JsxClosingElement): node is ts.JsxClosingElement {
     return node.kind === ts.SyntaxKind.JsxClosingElement;
+}
+
+/**
+ * Return true if node is `JsxFragment`
+ * @param node A TypeScript node
+ */
+export function isJsxFragment(node: ts.JsxFragment): node is ts.JsxFragment {
+    return node.kind === ts.SyntaxKind.JsxFragment;
+}
+
+/**
+ * Return true if node is `JsxOpeningFragment`
+ * @param node A TypeScript node
+ */
+export function isJsxOpeningFragment(node: ts.JsxOpeningFragment): node is ts.JsxOpeningFragment {
+    return node.kind === ts.SyntaxKind.JsxOpeningFragment;
+}
+
+/**
+ * Return true if node is `JsxClosingFragment`
+ * @param node A TypeScript node
+ */
+export function isJsxClosingFragment(node: ts.JsxClosingFragment): node is ts.JsxClosingFragment {
+    return node.kind === ts.SyntaxKind.JsxClosingFragment;
 }
 
 /**
  * Return true if node is `JsxAttribute`
  * @param node A TypeScript node
  */
-export function isJsxAttribute(node: ts.Node): node is ts.JsxAttribute {
+export function isJsxAttribute(node: ts.JsxAttribute): node is ts.JsxAttribute {
     return node.kind === ts.SyntaxKind.JsxAttribute;
 }
 
@@ -828,7 +853,7 @@ export function isJsxAttribute(node: ts.Node): node is ts.JsxAttribute {
  * Return true if node is `JsxAttributes`
  * @param node A TypeScript node
  */
-export function isJsxAttributes(node: ts.Node): node is ts.JsxAttributes {
+export function isJsxAttributes(node: ts.JsxAttributes): node is ts.JsxAttributes {
     return node.kind === ts.SyntaxKind.JsxAttributes;
 }
 
@@ -836,7 +861,7 @@ export function isJsxAttributes(node: ts.Node): node is ts.JsxAttributes {
  * Return true if node is `JsxSpreadAttribute`
  * @param node A TypeScript node
  */
-export function isJsxSpreadAttribute(node: ts.Node): node is ts.JsxSpreadAttribute {
+export function isJsxSpreadAttribute(node: ts.JsxSpreadAttribute): node is ts.JsxSpreadAttribute {
     return node.kind === ts.SyntaxKind.JsxSpreadAttribute;
 }
 
@@ -844,7 +869,7 @@ export function isJsxSpreadAttribute(node: ts.Node): node is ts.JsxSpreadAttribu
  * Return true if node is `JsxExpression`
  * @param node A TypeScript node
  */
-export function isJsxExpression(node: ts.Node): node is ts.JsxExpression {
+export function isJsxExpression(node: ts.JsxExpression): node is ts.JsxExpression {
     return node.kind === ts.SyntaxKind.JsxExpression;
 }
 
@@ -852,7 +877,7 @@ export function isJsxExpression(node: ts.Node): node is ts.JsxExpression {
  * Return true if node is `CaseClause`
  * @param node A TypeScript node
  */
-export function isCaseClause(node: ts.Node): node is ts.CaseClause {
+export function isCaseClause(node: ts.CaseClause): node is ts.CaseClause {
     return node.kind === ts.SyntaxKind.CaseClause;
 }
 
@@ -860,7 +885,7 @@ export function isCaseClause(node: ts.Node): node is ts.CaseClause {
  * Return true if node is `DefaultClause`
  * @param node A TypeScript node
  */
-export function isDefaultClause(node: ts.Node): node is ts.DefaultClause {
+export function isDefaultClause(node: ts.DefaultClause): node is ts.DefaultClause {
     return node.kind === ts.SyntaxKind.DefaultClause;
 }
 
@@ -868,7 +893,7 @@ export function isDefaultClause(node: ts.Node): node is ts.DefaultClause {
  * Return true if node is `HeritageClause`
  * @param node A TypeScript node
  */
-export function isHeritageClause(node: ts.Node): node is ts.HeritageClause {
+export function isHeritageClause(node: ts.HeritageClause): node is ts.HeritageClause {
     return node.kind === ts.SyntaxKind.HeritageClause;
 }
 
@@ -876,7 +901,7 @@ export function isHeritageClause(node: ts.Node): node is ts.HeritageClause {
  * Return true if node is `CatchClause`
  * @param node A TypeScript node
  */
-export function isCatchClause(node: ts.Node): node is ts.CatchClause {
+export function isCatchClause(node: ts.CatchClause): node is ts.CatchClause {
     return node.kind === ts.SyntaxKind.CatchClause;
 }
 
@@ -884,7 +909,7 @@ export function isCatchClause(node: ts.Node): node is ts.CatchClause {
  * Return true if node is `PropertyAssignment`
  * @param node A TypeScript node
  */
-export function isPropertyAssignment(node: ts.Node): node is ts.PropertyAssignment {
+export function isPropertyAssignment(node: ts.PropertyAssignment): node is ts.PropertyAssignment {
     return node.kind === ts.SyntaxKind.PropertyAssignment;
 }
 
@@ -892,7 +917,7 @@ export function isPropertyAssignment(node: ts.Node): node is ts.PropertyAssignme
  * Return true if node is `ShorthandPropertyAssignment`
  * @param node A TypeScript node
  */
-export function isShorthandPropertyAssignment(node: ts.Node): node is ts.ShorthandPropertyAssignment {
+export function isShorthandPropertyAssignment(node: ts.ShorthandPropertyAssignment): node is ts.ShorthandPropertyAssignment {
     return node.kind === ts.SyntaxKind.ShorthandPropertyAssignment;
 }
 
@@ -900,7 +925,7 @@ export function isShorthandPropertyAssignment(node: ts.Node): node is ts.Shortha
  * Return true if node is `SpreadAssignment`
  * @param node A TypeScript node
  */
-export function isSpreadAssignment(node: ts.Node): node is ts.SpreadAssignment {
+export function isSpreadAssignment(node: ts.SpreadAssignment): node is ts.SpreadAssignment {
     return node.kind === ts.SyntaxKind.SpreadAssignment;
 }
 
@@ -908,7 +933,7 @@ export function isSpreadAssignment(node: ts.Node): node is ts.SpreadAssignment {
  * Return true if node is `EnumMember`
  * @param node A TypeScript node
  */
-export function isEnumMember(node: ts.Node): node is ts.EnumMember {
+export function isEnumMember(node: ts.EnumMember): node is ts.EnumMember {
     return node.kind === ts.SyntaxKind.EnumMember;
 }
 
@@ -916,7 +941,7 @@ export function isEnumMember(node: ts.Node): node is ts.EnumMember {
  * Return true if node is `SourceFile`
  * @param node A TypeScript node
  */
-export function isSourceFile(node: ts.Node): node is ts.SourceFile {
+export function isSourceFile(node: ts.SourceFile): node is ts.SourceFile {
     return node.kind === ts.SyntaxKind.SourceFile;
 }
 
@@ -924,7 +949,7 @@ export function isSourceFile(node: ts.Node): node is ts.SourceFile {
  * Return true if node is `Bundle`
  * @param node A TypeScript node
  */
-export function isBundle(node: ts.Node): node is ts.Bundle {
+export function isBundle(node: ts.Bundle): node is ts.Bundle {
     return node.kind === ts.SyntaxKind.Bundle;
 }
 
@@ -932,7 +957,7 @@ export function isBundle(node: ts.Node): node is ts.Bundle {
  * Return true if node is `JSDocTypeExpression`
  * @param node A TypeScript node
  */
-export function isJSDocTypeExpression(node: ts.Node): node is ts.JSDocTypeExpression {
+export function isJSDocTypeExpression(node: ts.JSDocTypeExpression): node is ts.JSDocTypeExpression {
     return node.kind === ts.SyntaxKind.JSDocTypeExpression;
 }
 
@@ -940,7 +965,7 @@ export function isJSDocTypeExpression(node: ts.Node): node is ts.JSDocTypeExpres
  * Return true if node is `JSDocAllType`
  * @param node A TypeScript node
  */
-export function isJSDocAllType(node: ts.Node): node is ts.JSDocAllType {
+export function isJSDocAllType(node: ts.JSDocAllType): node is ts.JSDocAllType {
     return node.kind === ts.SyntaxKind.JSDocAllType;
 }
 
@@ -948,39 +973,15 @@ export function isJSDocAllType(node: ts.Node): node is ts.JSDocAllType {
  * Return true if node is `JSDocUnknownType`
  * @param node A TypeScript node
  */
-export function isJSDocUnknownType(node: ts.Node): node is ts.JSDocUnknownType {
+export function isJSDocUnknownType(node: ts.JSDocUnknownType): node is ts.JSDocUnknownType {
     return node.kind === ts.SyntaxKind.JSDocUnknownType;
-}
-
-/**
- * Return true if node is `JSDocArrayType`
- * @param node A TypeScript node
- */
-export function isJSDocArrayType(node: ts.Node): node is ts.JSDocArrayType {
-    return node.kind === ts.SyntaxKind.JSDocArrayType;
-}
-
-/**
- * Return true if node is `JSDocUnionType`
- * @param node A TypeScript node
- */
-export function isJSDocUnionType(node: ts.Node): node is ts.JSDocUnionType {
-    return node.kind === ts.SyntaxKind.JSDocUnionType;
-}
-
-/**
- * Return true if node is `JSDocTupleType`
- * @param node A TypeScript node
- */
-export function isJSDocTupleType(node: ts.Node): node is ts.JSDocTupleType {
-    return node.kind === ts.SyntaxKind.JSDocTupleType;
 }
 
 /**
  * Return true if node is `JSDocNullableType`
  * @param node A TypeScript node
  */
-export function isJSDocNullableType(node: ts.Node): node is ts.JSDocNullableType {
+export function isJSDocNullableType(node: ts.JSDocNullableType): node is ts.JSDocNullableType {
     return node.kind === ts.SyntaxKind.JSDocNullableType;
 }
 
@@ -988,39 +989,15 @@ export function isJSDocNullableType(node: ts.Node): node is ts.JSDocNullableType
  * Return true if node is `JSDocNonNullableType`
  * @param node A TypeScript node
  */
-export function isJSDocNonNullableType(node: ts.Node): node is ts.JSDocNonNullableType {
+export function isJSDocNonNullableType(node: ts.JSDocNonNullableType): node is ts.JSDocNonNullableType {
     return node.kind === ts.SyntaxKind.JSDocNonNullableType;
-}
-
-/**
- * Return true if node is `JSDocRecordType`
- * @param node A TypeScript node
- */
-export function isJSDocRecordType(node: ts.Node): node is ts.JSDocRecordType {
-    return node.kind === ts.SyntaxKind.JSDocRecordType;
-}
-
-/**
- * Return true if node is `JSDocRecordMember`
- * @param node A TypeScript node
- */
-export function isJSDocRecordMember(node: ts.Node): node is ts.JSDocRecordMember {
-    return node.kind === ts.SyntaxKind.JSDocRecordMember;
-}
-
-/**
- * Return true if node is `JSDocTypeReference`
- * @param node A TypeScript node
- */
-export function isJSDocTypeReference(node: ts.Node): node is ts.JSDocTypeReference {
-    return node.kind === ts.SyntaxKind.JSDocTypeReference;
 }
 
 /**
  * Return true if node is `JSDocOptionalType`
  * @param node A TypeScript node
  */
-export function isJSDocOptionalType(node: ts.Node): node is ts.JSDocOptionalType {
+export function isJSDocOptionalType(node: ts.JSDocOptionalType): node is ts.JSDocOptionalType {
     return node.kind === ts.SyntaxKind.JSDocOptionalType;
 }
 
@@ -1028,7 +1005,7 @@ export function isJSDocOptionalType(node: ts.Node): node is ts.JSDocOptionalType
  * Return true if node is `JSDocFunctionType`
  * @param node A TypeScript node
  */
-export function isJSDocFunctionType(node: ts.Node): node is ts.JSDocFunctionType {
+export function isJSDocFunctionType(node: ts.JSDocFunctionType): node is ts.JSDocFunctionType {
     return node.kind === ts.SyntaxKind.JSDocFunctionType;
 }
 
@@ -1036,31 +1013,15 @@ export function isJSDocFunctionType(node: ts.Node): node is ts.JSDocFunctionType
  * Return true if node is `JSDocVariadicType`
  * @param node A TypeScript node
  */
-export function isJSDocVariadicType(node: ts.Node): node is ts.JSDocVariadicType {
+export function isJSDocVariadicType(node: ts.JSDocVariadicType): node is ts.JSDocVariadicType {
     return node.kind === ts.SyntaxKind.JSDocVariadicType;
-}
-
-/**
- * Return true if node is `JSDocConstructorType`
- * @param node A TypeScript node
- */
-export function isJSDocConstructorType(node: ts.Node): node is ts.JSDocConstructorType {
-    return node.kind === ts.SyntaxKind.JSDocConstructorType;
-}
-
-/**
- * Return true if node is `JSDocThisType`
- * @param node A TypeScript node
- */
-export function isJSDocThisType(node: ts.Node): node is ts.JSDocThisType {
-    return node.kind === ts.SyntaxKind.JSDocThisType;
 }
 
 /**
  * Return true if node is `JSDocTag`
  * @param node A TypeScript node
  */
-export function isJSDocTag(node: ts.Node): node is ts.JSDocTag {
+export function isJSDocTag(node: ts.JSDocTag): node is ts.JSDocTag {
     return node.kind === ts.SyntaxKind.JSDocTag;
 }
 
@@ -1068,15 +1029,23 @@ export function isJSDocTag(node: ts.Node): node is ts.JSDocTag {
  * Return true if node is `JSDocAugmentsTag`
  * @param node A TypeScript node
  */
-export function isJSDocAugmentsTag(node: ts.Node): node is ts.JSDocAugmentsTag {
+export function isJSDocAugmentsTag(node: ts.JSDocAugmentsTag): node is ts.JSDocAugmentsTag {
     return node.kind === ts.SyntaxKind.JSDocAugmentsTag;
+}
+
+/**
+ * Return true if node is `JSDocClassTag`
+ * @param node A TypeScript node
+ */
+export function isJSDocClassTag(node: ts.JSDocClassTag): node is ts.JSDocClassTag {
+    return node.kind === ts.SyntaxKind.JSDocClassTag;
 }
 
 /**
  * Return true if node is `JSDocParameterTag`
  * @param node A TypeScript node
  */
-export function isJSDocParameterTag(node: ts.Node): node is ts.JSDocParameterTag {
+export function isJSDocParameterTag(node: ts.JSDocParameterTag): node is ts.JSDocParameterTag {
     return node.kind === ts.SyntaxKind.JSDocParameterTag;
 }
 
@@ -1084,7 +1053,7 @@ export function isJSDocParameterTag(node: ts.Node): node is ts.JSDocParameterTag
  * Return true if node is `JSDocReturnTag`
  * @param node A TypeScript node
  */
-export function isJSDocReturnTag(node: ts.Node): node is ts.JSDocReturnTag {
+export function isJSDocReturnTag(node: ts.JSDocReturnTag): node is ts.JSDocReturnTag {
     return node.kind === ts.SyntaxKind.JSDocReturnTag;
 }
 
@@ -1092,7 +1061,7 @@ export function isJSDocReturnTag(node: ts.Node): node is ts.JSDocReturnTag {
  * Return true if node is `JSDocTypeTag`
  * @param node A TypeScript node
  */
-export function isJSDocTypeTag(node: ts.Node): node is ts.JSDocTypeTag {
+export function isJSDocTypeTag(node: ts.JSDocTypeTag): node is ts.JSDocTypeTag {
     return node.kind === ts.SyntaxKind.JSDocTypeTag;
 }
 
@@ -1100,7 +1069,7 @@ export function isJSDocTypeTag(node: ts.Node): node is ts.JSDocTypeTag {
  * Return true if node is `JSDocTemplateTag`
  * @param node A TypeScript node
  */
-export function isJSDocTemplateTag(node: ts.Node): node is ts.JSDocTemplateTag {
+export function isJSDocTemplateTag(node: ts.JSDocTemplateTag): node is ts.JSDocTemplateTag {
     return node.kind === ts.SyntaxKind.JSDocTemplateTag;
 }
 
@@ -1108,7 +1077,7 @@ export function isJSDocTemplateTag(node: ts.Node): node is ts.JSDocTemplateTag {
  * Return true if node is `JSDocTypedefTag`
  * @param node A TypeScript node
  */
-export function isJSDocTypedefTag(node: ts.Node): node is ts.JSDocTypedefTag {
+export function isJSDocTypedefTag(node: ts.JSDocTypedefTag): node is ts.JSDocTypedefTag {
     return node.kind === ts.SyntaxKind.JSDocTypedefTag;
 }
 
@@ -1116,7 +1085,7 @@ export function isJSDocTypedefTag(node: ts.Node): node is ts.JSDocTypedefTag {
  * Return true if node is `JSDocPropertyTag`
  * @param node A TypeScript node
  */
-export function isJSDocPropertyTag(node: ts.Node): node is ts.JSDocPropertyTag {
+export function isJSDocPropertyTag(node: ts.JSDocPropertyTag): node is ts.JSDocPropertyTag {
     return node.kind === ts.SyntaxKind.JSDocPropertyTag;
 }
 
@@ -1124,23 +1093,15 @@ export function isJSDocPropertyTag(node: ts.Node): node is ts.JSDocPropertyTag {
  * Return true if node is `JSDocTypeLiteral`
  * @param node A TypeScript node
  */
-export function isJSDocTypeLiteral(node: ts.Node): node is ts.JSDocTypeLiteral {
+export function isJSDocTypeLiteral(node: ts.JSDocTypeLiteral): node is ts.JSDocTypeLiteral {
     return node.kind === ts.SyntaxKind.JSDocTypeLiteral;
-}
-
-/**
- * Return true if node is `JSDocLiteralType`
- * @param node A TypeScript node
- */
-export function isJSDocLiteralType(node: ts.Node): node is ts.JSDocLiteralType {
-    return node.kind === ts.SyntaxKind.JSDocLiteralType;
 }
 
 /**
  * Return true if node is `SyntaxList`
  * @param node A TypeScript node
  */
-export function isSyntaxList(node: ts.Node): node is ts.SyntaxList {
+export function isSyntaxList(node: ts.SyntaxList): node is ts.SyntaxList {
     return node.kind === ts.SyntaxKind.SyntaxList;
 }
 
@@ -1148,7 +1109,7 @@ export function isSyntaxList(node: ts.Node): node is ts.SyntaxList {
  * Return true if node is `NotEmittedStatement`
  * @param node A TypeScript node
  */
-export function isNotEmittedStatement(node: ts.Node): node is ts.NotEmittedStatement {
+export function isNotEmittedStatement(node: ts.NotEmittedStatement): node is ts.NotEmittedStatement {
     return node.kind === ts.SyntaxKind.NotEmittedStatement;
 }
 
@@ -1156,30 +1117,14 @@ export function isNotEmittedStatement(node: ts.Node): node is ts.NotEmittedState
  * Return true if node is `PartiallyEmittedExpression`
  * @param node A TypeScript node
  */
-export function isPartiallyEmittedExpression(node: ts.Node): node is ts.PartiallyEmittedExpression {
+export function isPartiallyEmittedExpression(node: ts.PartiallyEmittedExpression): node is ts.PartiallyEmittedExpression {
     return node.kind === ts.SyntaxKind.PartiallyEmittedExpression;
 }
 
 /**
- * Return true if node is `IntersectionTypeNode`
+ * Return true if node is `CommaListExpression`
  * @param node A TypeScript node
  */
-export function isIntersectionTypeNode(node: ts.TypeNode): node is ts.IntersectionTypeNode {
-    return node.kind === ts.SyntaxKind.IntersectionType;
-}
-
-/**
- * Return true if node is `LiteralTypeNode`
- * @param node A TypeScript node
- */
-export function isTypeLiteralNode(node: ts.TypeNode): node is ts.LiteralTypeNode {
-    return node.kind === ts.SyntaxKind.TypeLiteral;
-}
-
-/**
- * Return true if node is `GetAccessorDeclaration`
- * @param node A TypeScript node
- */
-export function isGetAccessorDeclaration(node: ts.Node): node is ts.GetAccessorDeclaration {
-    return node.kind === ts.SyntaxKind.GetAccessor;
+export function isCommaListExpression(node: ts.CommaListExpression): node is ts.CommaListExpression {
+    return node.kind === ts.SyntaxKind.CommaListExpression;
 }
