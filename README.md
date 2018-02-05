@@ -1,4 +1,13 @@
-# TypeScript isKind functions
+# (Deprecated) TypeScript isKind functions
+
+## Deprecation
+Since TypeScript 2.6 you can use TypeScript is* functions from ts namespace:
+
+```ts
+import * as ts from 'typescript' 
+
+ts.isPropertyAssignment // ...
+```
 
 ## Example
 
